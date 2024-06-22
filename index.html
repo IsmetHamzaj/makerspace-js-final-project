@@ -11,26 +11,39 @@
 <body>
     <div class="container">
         <div class="url-sidebar">
-            <h3>My shortened URLs</h3>
-            <div>
-                <p>url</p>
-                <span><a href=""><img src="assets/images/deleteIcon.png" alt=""></a></span>
-            </div>
-            <div>
-                <p>url</p>
-                <span><a href=""><img src="assets/images/deleteIcon.png" alt=""></a></span>
-            </div>
-            <div>
-                <p>url</p>
-                <span><a href=""><img src="assets/images/deleteIcon.png" alt=""></a></span>
+            <div class="text-div">
+                <h3>My shortened URLs</h3>
+                <div class="link-div">
+                    <a href="#">url</a>
+                    <span><a href=""><img src="assets/images/deleteIcon.png" alt=""></a></span>
+                </div>
+                <div class="link-div">
+                    <a href="#">url</a>
+                    <span><a href=""><img src="assets/images/deleteIcon.png" alt=""></a></span>
+                </div>
+                <div class="link-div">
+                    <a href="#">url</a>
+                    <span><a href=""><img src="assets/images/deleteIcon.png" alt=""></a></span>
+                </div>
             </div>
         </div>
         <div class="content">
             <div class="url-shortener-div">
-                
+                <h1>URL Shortener</h1>
+                <form class="shorten-form" onsubmit="">
+                    <input type="text" id="url-input" class="url-input" placeholder="Paste the URL to be shortened">
+                    <button class="shorten-btn" type="submit">Shorten URL</button>
+                </form>
             </div>
             <div class="url-exp-time">
-
+                <select id="options" name="options">
+                    <option value="" selected>Add expiration date</option>
+                    <option value="1 minute">1 minute</option>
+                    <option value="5 minutes">5 minutes</option>
+                    <option value="30 minutes">30 minutes</option>
+                    <option value="1 hour">1 hour</option>
+                    <option value="5 hours">5 hours</option>
+                </select>
             </div>
         </div>
     </div>
