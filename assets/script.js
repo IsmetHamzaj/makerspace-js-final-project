@@ -16,7 +16,7 @@ function generateRandomString(length) {
 function getMainUrl(url) {
     try {
         const puttedUrl = new URL(url)
-        return puttedUrl.hostname
+        return puttedUrl.origin
     } catch (error) {
         console.log("URL is invalid: ", error)
         return null;
